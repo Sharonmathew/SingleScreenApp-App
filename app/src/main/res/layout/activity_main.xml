@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignWithParentIfMissing="false"
+    android:clickable="true"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/urg"
+        android:fontFamily="sans-serif-black"
+        android:gravity="bottom"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:text="BURGERS POINT!"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rate"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@id/main"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-40dp"
+        android:layout_toRightOf="@id/direction"
+        android:background="#EEE9E8"
+        android:clickable="true"
+        android:contentDescription="Rating"
+        android:fadeScrollbars="true"
+        android:isIndicator="true"
+        android:keepScreenOn="true"
+        android:numStars="5"
+        android:overScrollMode="always"
+        android:rating="3.5" />
+
+
+    <ImageButton
+        android:id="@+id/homeicon"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="100dp"
+
+
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/main"
+        android:layout_alignBottom="@id/main"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginBottom="-98dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hoome"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/direction"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@id/main"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="-98dp"
+        android:layout_toRightOf="@id/homeicon"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/direction" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/homeicon"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-20dp"
+
+        android:fontFamily="sans-serif-black"
+
+        android:text="About BURGERS POINT:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/paraabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/about"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-72dp"
+
+
+        android:text=" A place created for all the burger lovers out there. Get your favourite burgers here. A place where you can spend times with your loved ones and get that quality time you always waiter for. AND GRAB OUR MOUTHWATERING BURGERS!!" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/paraabout"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-72dp"
+        android:text="Email: burgerpoint@hotmail.com" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/email"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-27dp"
+        android:text="Phone: 9746488523" />
+
+
+</RelativeLayout>
